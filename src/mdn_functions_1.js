@@ -22,14 +22,12 @@ section.appendChild(para);
 
 //ANSWER:
 
-
 function chooseName(names) {
   const random = names[Math.floor(Math.random() * names.length)];
   para.innerHTML = random;
 }
 
 chooseName(names);
-
 
 
 
@@ -66,8 +64,29 @@ const color = 'blue';
 //ANSWER:
 
 
+// Limpiamos el lienzo
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+// Dibujamos un rectángulo relleno
+ctx.fillStyle = color;
+ctx.fillRect(x, y, width, height);
+
+// Dibujamos un contorno rectangular
+ctx.strokeStyle = 'black';
+ctx.strokeRect(x, y, width, height);
 
 
+/*
+
+En este código:
+
+clearRect(x, y, width, height) borra un área rectangular en el lienzo, haciéndola transparente.
+
+fillRect(x, y, width, height) dibuja un rectángulo relleno con el color especificado.
+
+strokeRect(x, y, width, height) dibuja un contorno rectangular.
+
+*/
 
 
 //Functions 3
