@@ -23,6 +23,12 @@ section.appendChild(para);
 //ANSWER:
 
 
+function chooseName(names) {
+  const random = names[Math.floor(Math.random() * names.length)];
+  para.innerHTML = random;
+}
+
+chooseName(names);
 
 
 
