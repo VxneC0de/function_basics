@@ -117,9 +117,23 @@ section.appendChild(para);
 
 //ANSWER:
 
+// Función para generar un número aleatorio entre dos límites
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
+// Función actualizada para elegir un nombre
+function chooseName(names) {
+  const index = random(0, names.length - 1);
+  return names[index];
+}
 
+// Asignar el nombre elegido al contenido de texto del párrafo
+para.textContent = chooseName(names);
 
+/*
+Este código incluye la función random(min, max) que genera un número aleatorio entre min y max (ambos incluidos), la función chooseName(names) que utiliza la función random para seleccionar un índice aleatorio del array names y devuelve el nombre en ese índice, y finalmente asigna este nombre al contenido de texto del párrafo para.
+*/
 
 //Functions 4
 
@@ -148,4 +162,9 @@ section.appendChild(para);
 */
 
 //ANSWER:
+
+const isShort = name => name.length < 5;
+
+const shortNames = names.filter(isShort);
+para.textContent = shortNames;
 
