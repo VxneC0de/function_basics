@@ -4,7 +4,7 @@
 
 //Por ahora, simplemente escriba cada función y pruebe el resultado con console.log.
 
-//- Escribe una función llamada add7que tome un número y devuelva ese número + 7.
+//- Escribe una función llamada add7 que tome un número y devuelva ese número + 7.
 
 function add7(num) {
     return num + 7;
@@ -33,7 +33,14 @@ function capitalize(str) {
   console.log(capitalize("hOlA"));
 
 
+//OTHER
 
+/*
+function capitalize(str) {
+    return str.toUpperCase(0).;
+  }
+  console.log(capitalize("hOlA"));
+*/
 
 
 //- Escriba una función llamada lastLetterque tome una cadena y devuelva la última letra de esa cadena:

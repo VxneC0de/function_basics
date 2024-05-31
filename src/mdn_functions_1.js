@@ -135,6 +135,23 @@ para.textContent = chooseName(names);
 Este código incluye la función random(min, max) que genera un número aleatorio entre min y max (ambos incluidos), la función chooseName(names) que utiliza la función random para seleccionar un índice aleatorio del array names y devuelve el nombre en ese índice, y finalmente asigna este nombre al contenido de texto del párrafo para.
 */
 
+
+//OTHER
+
+/*
+function random(min, max){
+return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function chooseName(names){
+const index = random(0, names.length);
+return names[index];
+}
+
+para.innerHTML = chooseName(names);
+*/
+
+
 //Functions 4
 
 /*
